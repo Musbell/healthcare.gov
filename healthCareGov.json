@@ -34,7 +34,7 @@
     "/api/articles{mediaTypeExtension}": {
       "get": {
         "tags": ["Articles"],
-        "description": "Returns pages content.",
+        "description": "Fetches articles, returning them in JSON format if '.json' is specified, or in HTML format otherwise. ",
         "operationId": "GetArticles",
         "parameters": [
           {
@@ -68,7 +68,7 @@
     "/api/blog{mediaTypeExtension}": {
       "get": {
         "tags": ["Blogs"],
-        "description": "Returns pages content.",
+        "description": "Fetches blog pages content, returning them in JSON format if '.json' is specified, or in HTML format otherwise.",
         "operationId": "getAllBlogs",
         "parameters": [
           {
@@ -102,7 +102,7 @@
     "/api/glossary{mediaTypeExtension}": {
       "get": {
         "tags": ["Glossaries"],
-        "description": "Returns pages content.",
+        "description": "Fetches glossary pages content, returning them in JSON format if '.json' is specified, or in HTML format otherwise.",
         "operationId": "GetAllGlossaries",
         "parameters": [
           {
@@ -137,7 +137,7 @@
       "get": {
         "tags": ["Questions"],
         "operationId": "GetlAllQuestions",
-        "description": "Returns pages content.",
+        "description": "Fetches questions, returning them in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -171,7 +171,7 @@
       "get": {
         "tags": ["States"],
         "operationId": "GetAllStates",
-        "description": "Returns pages content.",
+        "description": "Fetches states, returning them in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -205,7 +205,7 @@
       "get": {
         "tags": ["Topics"],
         "operationId": "GetAllTopics",
-        "description": "Returns pages content.",
+        "description": "Fetches topics, returning them in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -239,7 +239,7 @@
       "get": {
         "tags": ["Blogs", "Pages"],
         "operationId": "GetBlogByPageName",
-        "description": "Returns pages content.",
+        "description": "Fetches a blog page content, returning it in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -281,7 +281,7 @@
       "get": {
         "tags": ["Glossaries", "Pages"],
         "operationId": "GetGlossaryByPageName",
-        "description": "Returns pages content.",
+        "description": "Fetches a glossary page content, returning it in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -323,7 +323,7 @@
       "get": {
         "tags": ["Questions", "Pages"],
         "operationId": "GetQuestionByPageName",
-        "description": "Returns pages content.",
+        "description": "Fetches a question page content, returning it in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -365,7 +365,7 @@
       "get": {
         "tags": ["Pages"],
         "operationId": "GetPageByPageName",
-        "description": "Returns pages content.",
+        "description": "Fetches a page content, returning it in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
@@ -407,7 +407,7 @@
       "get": {
         "tags": ["States"],
         "operationId": "GetStateByStateName",
-        "description": "Returns pages content.",
+        "description": "Fetches a state content, returning it in JSON format if '.json' is specified, or in HTML format otherwise.",
         "parameters": [
           {
             "description": "Omiting the param causes html to be returned.",
